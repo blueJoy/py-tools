@@ -19,9 +19,13 @@ CREATE TABLE `ip_store` (
 https://db-ip.com/db/
 
 
-ps:ip地址在MySQL中用long类型存储。
+ps:ip地址在MySQL中用long类型存储
 mysql中IP转long的函数
 ```
 SELECT INET_ATON('1.1.0.230')
 SELECT INET_NTOA(16785408)
+```
+查询IP区间的语句
+```
+SELECT * FROM ip_store WHERE from_ip <= INET_ATON('1.1.73.0') AND to_ip >=  INET_ATON('1.1.73.0');
 ```
