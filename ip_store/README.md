@@ -23,5 +23,5 @@ ps:ip地址在MySQL中用long类型存储。
 mysql中IP转long的函数
 ```
 SELECT INET_ATON('1.1.0.230')
-SELECT INET_NTOA(223.255.255.0)
+SELECT INET_NTOA(16785408)
 ```
